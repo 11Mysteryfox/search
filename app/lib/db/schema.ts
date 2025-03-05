@@ -1,4 +1,4 @@
-import { pgTable, serial, varchar, integer, decimal, primaryKey, foreignKey } from 'drizzle-orm/pg-core'
+import { pgTable, serial, varchar, integer, decimal } from 'drizzle-orm/pg-core' //, primaryKey, foreignKey
 export const department = pgTable('department', {
     id: serial('id').primaryKey(),
     name: varchar('name', { length: 255 }).notNull(),
